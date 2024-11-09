@@ -5,7 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Общий рейтинг</title>
     <style>
-        table {
+
+    .mdl-data-table {
+        table-layout:fixed;
+        width:100%; 
+    }
+    #my-table td, th {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -o-text-overflow: ellipsis;
+    }
+
+
+    /* unrelated to responsive table css */
+    #my-table{
+      margin-top:24px;
+    }
+    .material-icons {
+      vertical-align: -25%;
+    }
+    .mdl-data-table th, td{
+      text-align: left !important;
+    }
+    .center{
+      text-align:center;
+    }
+    
+/*        table {
             border-collapse: collapse;
             width: 100%;
         }
@@ -19,7 +47,7 @@
         th {
             background-color: #f1f1f1;
             font-weight: bold;
-        }
+        }*/
     </style>
 </head>
 
@@ -27,8 +55,7 @@
 
 <h2>Общий рейтинг Тренировок по алгоритмам 6.0</h2>
 
-<p>last update: 2024.11.09 00:00</p>
-<br>
+<p>last updated: 2024.11.09 00:00 (MSK, UTC +3)</p>
 
 <table border="1" class="dataframe">
   <thead>
