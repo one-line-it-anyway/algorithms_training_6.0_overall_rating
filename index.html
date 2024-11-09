@@ -6,18 +6,24 @@
     <title>Общий рейтинг</title>
     <style>
 
-.horizontal-dividers td, .horizontal-dividers th {
-  padding: 15px 15px 5px 15px;
-  text-align: left;
-  border-bottom: 1px solid lightgray;
-}
+        .hoverable-table tr:hover{
+           background-color: #f4f4f4;
+        }
+        .hoverable-table th{
+        background-color: lightgray;
+        }
 
-.horizontal-dividers table {
-  width: 100%;
-  border-collapse: collapse;
-  
-}
-    
+        .hoverable-table td, .hoverable-table th {
+          padding: 10px;
+          text-align: left;
+          border: 1px solid lightgray;
+        }
+
+        .hoverable-table table {
+          width: 100%;
+          border-collapse: collapse;
+        }
+
 /*        table {
             border-collapse: collapse;
             width: 100%;
@@ -42,6 +48,7 @@
 
 <p>last updated: 2024.11.09 00:00 (MSK, UTC +3)</p>
 
+<div class="hoverable-table">
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -2085,6 +2092,7 @@
     </tr>
   </tbody>
 </table>
+</div>
 
 <br>
 <p>*дополнительные попытки по решённым задачам со звёздочкой</p>
